@@ -1,10 +1,14 @@
-import logic.InputOperand;
+import logic.InputCreator;
+import logic.commands.ReplaceCommand;
 
 public class Main {
     public static void main(String[] args) {
-        InputOperand p = new InputOperand();
-        p.addToList();
+        InputCreator p = new InputCreator();
+        String[] arr = {"Оливки", "маслины"};
+        p.addWhile();
+        ReplaceCommand rp = new ReplaceCommand();
+        rp.satisfy(arr,p.getArrayList());
         System.out.println(p.getArrayList());
     }
 }
-//asdыфв
+

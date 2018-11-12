@@ -1,19 +1,20 @@
 package logic;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class InputOperand {
+public class InputCreator {
 
-    private ArrayList<String> list = new ArrayList<>();
+    private List<Product> preList = new ArrayList<>();
 
-    public void addToList() {
+    public void addWhile() {
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        while (sc.hasNext()) {
             System.out.println("Что хотите добавить?");
             String inner = sc.nextLine().trim();
             if (!inner.equals("")) {
-                this.list.add(inner);
+                this.preList.add(new Product(inner));
             } else {
                 break;
             }
@@ -21,7 +22,7 @@ public class InputOperand {
         }
     }
 
-    public ArrayList<String> getArrayList() {
-        return list;
+    public List<Product> getArrayList() {
+        return this.preList;
     }
 }

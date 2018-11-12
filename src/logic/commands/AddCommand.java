@@ -11,7 +11,4 @@ public class AddCommand implements Command {
     public void satisfy(String[] args, List<String> arr) {
         arr.addAll(Arrays.asList(args));
     }
-
-    @Override
-    public void satisfy(String[] args1, String[] args2, List<String> arr) {}
 }

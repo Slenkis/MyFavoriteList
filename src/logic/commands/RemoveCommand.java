@@ -13,7 +13,4 @@ public class RemoveCommand implements Command {
         }
 
     }
-
-    @Override
-    public void satisfy(String[] args1, String[] args2, List<String> arr) {}
 }

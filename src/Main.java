@@ -1,4 +1,3 @@
-import logic.InputCreator;
 import logic.Parser;
 
 
@@ -17,10 +16,11 @@ public class Main {
 //
 //        System.out.println(p.getArrayList());
         while (wh) {
-            System.out.println("Для добавления введите new продукт \n"+
-                    "Для изменения введите rp старый : новый \n" +
-                    "Для удаления введите rm продукт \n");
+            System.out.println("For add write new %product% \n"+
+                    "For repalce write rp %old_product% : %new_product% \n" +
+                    "For remove write rm %product% \n");
             Parser p2 = new Parser(sc.nextLine().trim(), mainList);
+            System.out.println();
         }
     }
 }

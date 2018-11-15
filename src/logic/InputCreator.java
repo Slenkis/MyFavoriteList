@@ -1,33 +1,28 @@
 package logic;
 
-import logic.commands.AddCommand;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class InputCreator {
 
-    private List<String> preList = new ArrayList<>();
+    private List<String> listWithNewProducts = new ArrayList<>();
 
-    public void addWhile() {
-        AddCommand adC = new AddCommand();
-        List<String> innerList = new ArrayList<>();
+    public List<String> addWhile() {
         Scanner sc = new Scanner(System.in);
-        while (sc.hasNext()) {
+        while (true) {
             System.out.println("Что хотите добавить?");
-            inner.add(sc.nextLine().trim());
-            if (!inner.equals("")) {
-                innerList.add()
-                adC.satisfy(inner, preList);
+            String in = sc.nextLine().trim();
+            if (!in.equals("")) {
+                this.listWithNewProducts.add(in);
             } else {
                 break;
             }
-
         }
+        return this.listWithNewProducts;
     }
 
     public List<String> getArrayList() {
-        return this.preList;
+        return this.listWithNewProducts;
     }
 }

@@ -10,11 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         List<String> mainList = new ArrayList<>();
         boolean wh = true;
-//
-//        InputCreator p = new InputCreator();
-//
-//
-//        System.out.println(p.getArrayList());
+
         while (wh) {
             System.out.println("For add write new %product% \n"+
                     "For repalce write rp %old_product% : %new_product% \n" +
